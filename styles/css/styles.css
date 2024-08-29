@@ -335,7 +335,7 @@ h3,
 }
 .hero {
   padding-block: 40px;
-  background-image: url("images/bg.svg");
+  background-image: url("/images/bg.svg");
 }
 .hero__inner {
   display: flex;
