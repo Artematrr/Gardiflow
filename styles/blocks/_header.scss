@@ -1,0 +1,28 @@
+.header {
+	position: sticky;
+	top: 0;
+	padding-block: 15px;
+	background-color: var(--gray-200);
+	z-index: 2;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 15px 20px;
+	}
+
+	&__logo {
+		width: 210px;
+
+		@include mobile {
+			width: 140px;
+		}
+	}
+
+	&__button {
+		@include mobile {
+			padding: 8px 12px;
+		}
+	}
+}

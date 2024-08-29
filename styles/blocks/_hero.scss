@@ -1,0 +1,46 @@
+.hero {
+	padding-block: 40px;
+	background-image: url('images/bg.svg');
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+
+	&__section {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+
+		.combined-header__subtitle {
+			@include fluid-text(32, 96);
+		}
+
+		&--top {
+			row-gap: 0;
+
+			.hero__header {
+				margin-bottom: -4em;
+
+				@include mobile {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&--bottom {
+			text-align: right;
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__header {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__image {
+		z-index: 0;
+	}
+}
